@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.board-row {
+  display: grid;
+  grid-template-columns: repeat(15, 40px); /* 每行显示15个格子，每个格子的宽度和高度为 40px */
+  grid-gap: 0px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 40px; /* 增大每个格子的尺寸 */
+  padding: 0;
+  text-align: center;
+  width: 40px; /* 增大每个格子的尺寸 */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 中心对齐棋子的标识 */
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.game-board {
+  display: inline-block;
+  margin: 20px;
+}
+
+.game-info {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
